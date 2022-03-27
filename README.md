@@ -18,6 +18,6 @@ The jupyter notebook data_exploration.ipynb cosnsists of the steps to generate a
 
 ## Model Training and Prediction
 
-A model wad trained to predict Atrial Flutter (fpga_afl_model.ipynb) from a single ECG lead.
+A model wad trained to predict Atrial Flutter (afl_model_fpga.ipynb) from a single ECG lead.
 
 Running the jupyter notebook after generating the "full_dataset.csv" file will execute the steps required to train the model.
