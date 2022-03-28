@@ -1,4 +1,6 @@
-# ecg_diagnosis
+# ecg_diagnosis (for EG4301 FYP)
+
+## Done by Jonathan Chua and Ding Lingke
 
 ## Data
 
