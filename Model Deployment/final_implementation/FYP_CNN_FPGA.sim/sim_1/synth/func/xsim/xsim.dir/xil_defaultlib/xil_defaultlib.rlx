@@ -1,0 +1,6 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/Final Complete NN Implementation/FYP_CNN_FPGA/FYP_CNN_FPGA.sim/sim_1/synth/func/xsim/Testbench_func_synth.v,1646573040,verilog,,C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/Final Complete NN Implementation/FYP_CNN_FPGA/FYP_CNN_FPGA.srcs/sim_1/imports/new/testbench.v,,CONV1D_1st_Data_RAM;CONV1D_1st_RAM;CONV1D_2nd_Data_RAM;CONV1D_2nd_Data_RAM_0;CONV1D_2nd_Data_RAM_1;CONV1D_2nd_RAM;CONV1D_3rd_Data_RAM;CONV1D_3rd_RAM;Comparator_2_into_1;Compute_Processor;Data_RAM;FC_1st_Data_RAM;FC_1st_RAM;FC_2nd_Data_RAM;FC_2nd_RAM;MaxPool_Data_RAM;Multiply;UART_RX;UART_RX_Flow_ctrl;UART_TX;UART_TX_Flow_ctrl;Weights_RAM;Wrapper;glbl;uCode,,,,,,,,
+C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/Final Complete NN Implementation/FYP_CNN_FPGA/FYP_CNN_FPGA.srcs/sim_1/imports/new/testbench.v,1646187121,verilog,,,,Testbench,,,,,,,,

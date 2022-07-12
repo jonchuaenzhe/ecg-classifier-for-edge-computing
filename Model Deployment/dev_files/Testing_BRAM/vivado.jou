@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Feb 28 23:49:25 2022
+# Process ID: 17652
+# Current directory: C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/Testing_BRAM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17412 C:\Users\Lingke\Desktop\FYP\FYP_AI_on_FPGA\Testing_BRAM\Testing_BRAM.xpr
+# Log file: C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/Testing_BRAM/vivado.log
+# Journal file: C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/Testing_BRAM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/Testing_BRAM/Testing_BRAM.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1

@@ -1,0 +1,727 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Feb  2 11:29:12 2022
+# Process ID: 15256
+# Current directory: C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.runs/synth_1
+# Command line: vivado.exe -log myip.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source myip.tcl
+# Log file: C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.runs/synth_1/myip.vds
+# Journal file: C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source myip.tcl -notrace
+Command: synth_design -top myip -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11660 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 831.422 ; gain = 234.293
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'myip' [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/sources_1/new/myip.v:23]
+	Parameter Number_of_dataset bound to: 512 - type: integer 
+	Parameter Dataset_depth_counter_bits bound to: 9 - type: integer 
+	Parameter Number_of_bits bound to: 16 - type: integer 
+	Parameter Number_of_features bound to: 6 - type: integer 
+	Parameter Feature_counter_bits bound to: 3 - type: integer 
+	Parameter Number_of_filters bound to: 8 - type: integer 
+	Parameter Filter_counter_bits bound to: 3 - type: integer 
+	Parameter Data_depth_bits bound to: 9 - type: integer 
+	Parameter weights_depth_bits bound to: 5 - type: integer 
+	Parameter Number_of_weights_depth bound to: 3 - type: integer 
+	Parameter Total_number_of_input_words bound to: 512 - type: integer 
+	Parameter Total_number_of_weights bound to: 48 - type: integer 
+	Parameter Total_number_of_output_words bound to: 4096 - type: integer 
+	Parameter Idle bound to: 4'b1000 
+	Parameter Read_Inputs bound to: 4'b0100 
+	Parameter Compute bound to: 4'b0010 
+	Parameter Write_Outputs bound to: 4'b0001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/sources_1/new/myip.v:155]
+INFO: [Synth 8-6157] synthesizing module 'Data_RAM' [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/sources_1/new/Data_RAM.v:23]
+	Parameter Bit_width bound to: 16 - type: integer 
+	Parameter Nr_depth bound to: 512 - type: integer 
+	Parameter Depth_counter_bits bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Data_RAM' (1#1) [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/sources_1/new/Data_RAM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Weight_RAM' [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/sources_1/new/Weight_RAM.v:23]
+	Parameter Bit_width bound to: 16 - type: integer 
+	Parameter Nr_depth bound to: 8 - type: integer 
+	Parameter Depth_counter_bits bound to: 3 - type: integer 
+	Parameter Nr_feature bound to: 6 - type: integer 
+	Parameter Feature_counter_bits bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Weight_RAM' (2#1) [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/sources_1/new/Weight_RAM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RES_RAM' [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/sources_1/new/RES_RAM.v:23]
+	Parameter Bit_width bound to: 16 - type: integer 
+	Parameter Nr_depth bound to: 8 - type: integer 
+	Parameter Depth_counter_bits bound to: 3 - type: integer 
+	Parameter data_set_count bound to: 512 - type: integer 
+	Parameter Feature_counter_bits bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RES_RAM' (3#1) [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/sources_1/new/RES_RAM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Compute_Processor' [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/sources_1/new/Compute_Processor.v:23]
+	Parameter Bit_width bound to: 16 - type: integer 
+	Parameter Dataset_depth_counter_bits bound to: 9 - type: integer 
+	Parameter Filter_counter_bits bound to: 3 - type: integer 
+	Parameter Instr_bit_width bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Simple_RAM' [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/sources_1/new/Simple_RAM.v:23]
+	Parameter Bit_width bound to: 14 - type: integer 
+	Parameter Instr_bit_width bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Simple_RAM' (4#1) [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/sources_1/new/Simple_RAM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Multiply' [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/sources_1/new/Multiply.v:23]
+	Parameter Bit_width bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Multiply' (5#1) [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/sources_1/new/Multiply.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/sources_1/new/Adder.v:23]
+	Parameter Bit_width bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (6#1) [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/sources_1/new/Adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Compute_Processor' (7#1) [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/sources_1/new/Compute_Processor.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'myip' (8#1) [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/sources_1/new/myip.v:23]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_0[31]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_0[30]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_0[29]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_0[28]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_0[27]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_0[26]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_0[25]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_0[24]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_1[31]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_1[30]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_1[29]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_1[28]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_1[27]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_1[26]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_1[25]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_1[24]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_2[31]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_2[30]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_2[29]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_2[28]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_2[27]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_2[26]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_2[25]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_2[24]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_3[31]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_3[30]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_3[29]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_3[28]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_3[27]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_3[26]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_3[25]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_3[24]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_4[31]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_4[30]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_4[29]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_4[28]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_4[27]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_4[26]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_4[25]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_4[24]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_5[31]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_5[30]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_5[29]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_5[28]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_5[27]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_5[26]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_5[25]
+WARNING: [Synth 8-3331] design Adder has unconnected port Mul_result_5[24]
+WARNING: [Synth 8-3331] design myip has unconnected port S_AXIS_TLAST
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 904.266 ; gain = 307.137
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 904.266 ; gain = 307.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 904.266 ; gain = 307.137
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 904.266 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/constrs_1/imports/digilent-xdc-master/Cmod-A7-Master.xdc]
+Finished Parsing XDC File [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/constrs_1/imports/digilent-xdc-master/Cmod-A7-Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 997.797 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1002.324 ; gain = 4.527
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1002.324 ; gain = 405.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1002.324 ; gain = 405.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1002.324 ; gain = 405.195
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "RAM_0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RAM_1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RAM_2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RAM_3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RAM_4" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RAM_5" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'myip'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    Idle |                             1000 |                             1000
+             Read_Inputs |                             0100 |                             0100
+                 Compute |                             0010 |                             0010
+           Write_Outputs |                             0001 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'myip'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1002.324 ; gain = 405.195
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     24 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 8     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               16 Bit    Registers := 25    
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 5     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
++---RAMs : 
+	               8K Bit         RAMs := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   9 Input     16 Bit        Muxes := 6     
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   5 Input     13 Bit        Muxes := 1     
+	   5 Input     11 Bit        Muxes := 1     
+	   6 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 5     
+	   5 Input      9 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module myip 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input     13 Bit        Muxes := 1     
+	   5 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   5 Input      9 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 13    
+Module Data_RAM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 4     
++---Registers : 
+	               16 Bit    Registers := 5     
++---RAMs : 
+	               8K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Weight_RAM 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 6     
++---Muxes : 
+	   9 Input     16 Bit        Muxes := 6     
+Module RES_RAM 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---RAMs : 
+	               8K Bit         RAMs := 8     
++---Muxes : 
+	   8 Input     16 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 8     
+Module Simple_RAM 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 4     
+Module Multiply 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+Module Adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     24 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module Compute_Processor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               16 Bit    Registers := 12    
+	               14 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3936] Found unconnected internal register 'Compute_Processor/Mul_output_add_data_0_reg' and it is trimmed from '32' to '24' bits. [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/sources_1/new/Compute_Processor.v:199]
+DSP Report: Generating DSP Compute_Processor/Mul_output_add_data_1_reg, operation Mode is: (A2*B2 or 0).
+DSP Report: register Compute_Processor/Mul_input_weight_1_reg is absorbed into DSP Compute_Processor/Mul_output_add_data_1_reg.
+DSP Report: register Compute_Processor/Mul_input_data_0_reg is absorbed into DSP Compute_Processor/Mul_output_add_data_1_reg.
+DSP Report: register Compute_Processor/Mul_output_add_data_1_reg is absorbed into DSP Compute_Processor/Mul_output_add_data_1_reg.
+DSP Report: operator Compute_Processor/Multiply_unit_parallel/mul_result_10 is absorbed into DSP Compute_Processor/Mul_output_add_data_1_reg.
+DSP Report: Generating DSP Compute_Processor/Mul_output_add_data_2_reg, operation Mode is: (A2*B2 or 0).
+DSP Report: register Compute_Processor/Mul_input_weight_2_reg is absorbed into DSP Compute_Processor/Mul_output_add_data_2_reg.
+DSP Report: register Compute_Processor/Mul_input_data_1_reg is absorbed into DSP Compute_Processor/Mul_output_add_data_2_reg.
+DSP Report: register Compute_Processor/Mul_output_add_data_2_reg is absorbed into DSP Compute_Processor/Mul_output_add_data_2_reg.
+DSP Report: operator Compute_Processor/Multiply_unit_parallel/mul_result_20 is absorbed into DSP Compute_Processor/Mul_output_add_data_2_reg.
+DSP Report: Generating DSP Compute_Processor/Mul_output_add_data_3_reg, operation Mode is: (A2*B2 or 0).
+DSP Report: register Compute_Processor/Mul_input_weight_3_reg is absorbed into DSP Compute_Processor/Mul_output_add_data_3_reg.
+DSP Report: register Compute_Processor/Mul_input_data_2_reg is absorbed into DSP Compute_Processor/Mul_output_add_data_3_reg.
+DSP Report: register Compute_Processor/Mul_output_add_data_3_reg is absorbed into DSP Compute_Processor/Mul_output_add_data_3_reg.
+DSP Report: operator Compute_Processor/Multiply_unit_parallel/mul_result_30 is absorbed into DSP Compute_Processor/Mul_output_add_data_3_reg.
+DSP Report: Generating DSP Compute_Processor/Mul_output_add_data_4_reg, operation Mode is: (A2*B2 or 0).
+DSP Report: register Compute_Processor/Mul_input_weight_4_reg is absorbed into DSP Compute_Processor/Mul_output_add_data_4_reg.
+DSP Report: register Compute_Processor/Mul_input_data_3_reg is absorbed into DSP Compute_Processor/Mul_output_add_data_4_reg.
+DSP Report: register Compute_Processor/Mul_output_add_data_4_reg is absorbed into DSP Compute_Processor/Mul_output_add_data_4_reg.
+DSP Report: operator Compute_Processor/Multiply_unit_parallel/mul_result_40 is absorbed into DSP Compute_Processor/Mul_output_add_data_4_reg.
+DSP Report: Generating DSP Compute_Processor/Mul_output_add_data_5_reg, operation Mode is: (A2*B2 or 0).
+DSP Report: register Compute_Processor/Mul_input_weight_5_reg is absorbed into DSP Compute_Processor/Mul_output_add_data_5_reg.
+DSP Report: register Compute_Processor/Mul_input_data_4_reg is absorbed into DSP Compute_Processor/Mul_output_add_data_5_reg.
+DSP Report: register Compute_Processor/Mul_output_add_data_5_reg is absorbed into DSP Compute_Processor/Mul_output_add_data_5_reg.
+DSP Report: operator Compute_Processor/Multiply_unit_parallel/mul_result_50 is absorbed into DSP Compute_Processor/Mul_output_add_data_5_reg.
+WARNING: [Synth 8-3331] design myip has unconnected port S_AXIS_TLAST
+INFO: [Synth 8-3886] merging instance 'Compute_Processor/Instr_RAM/Data_out_reg[7]' (FD) to 'Compute_Processor/Instr_RAM/Data_out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Compute_Processor/Instr_RAM/Data_out_reg[6]' (FD) to 'Compute_Processor/Instr_RAM/Data_out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Compute_Processor/Instr_RAM/Data_out_reg[5]' (FD) to 'Compute_Processor/Instr_RAM/Data_out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Compute_Processor/Instr_RAM/Data_out_reg[0]' (FD) to 'Compute_Processor/Instr_RAM/Data_out_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Compute_Processor/Instr_ptr_reg[13] )
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_0_reg[7]' (FDE_1) to 'Weight_RAM/Read_data_out_0_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_0_reg[8]' (FDE_1) to 'Weight_RAM/Read_data_out_0_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_0_reg[9]' (FDE_1) to 'Weight_RAM/Read_data_out_0_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_0_reg[10]' (FDE_1) to 'Weight_RAM/Read_data_out_0_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_0_reg[11]' (FDE_1) to 'Weight_RAM/Read_data_out_0_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_0_reg[12]' (FDE_1) to 'Weight_RAM/Read_data_out_0_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_0_reg[13]' (FDE_1) to 'Weight_RAM/Read_data_out_0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_0_reg[14]' (FDE_1) to 'Weight_RAM/Read_data_out_0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_2_reg[3]' (FDE_1) to 'Weight_RAM/Read_data_out_2_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_2_reg[7]' (FDE_1) to 'Weight_RAM/Read_data_out_2_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_2_reg[8]' (FDE_1) to 'Weight_RAM/Read_data_out_2_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_2_reg[9]' (FDE_1) to 'Weight_RAM/Read_data_out_2_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_2_reg[10]' (FDE_1) to 'Weight_RAM/Read_data_out_2_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_2_reg[11]' (FDE_1) to 'Weight_RAM/Read_data_out_2_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_2_reg[12]' (FDE_1) to 'Weight_RAM/Read_data_out_2_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_2_reg[13]' (FDE_1) to 'Weight_RAM/Read_data_out_2_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_2_reg[14]' (FDE_1) to 'Weight_RAM/Read_data_out_2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_1_reg[8]' (FDE_1) to 'Weight_RAM/Read_data_out_1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_1_reg[9]' (FDE_1) to 'Weight_RAM/Read_data_out_1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_1_reg[10]' (FDE_1) to 'Weight_RAM/Read_data_out_1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_1_reg[11]' (FDE_1) to 'Weight_RAM/Read_data_out_1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_1_reg[12]' (FDE_1) to 'Weight_RAM/Read_data_out_1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_1_reg[13]' (FDE_1) to 'Weight_RAM/Read_data_out_1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_1_reg[14]' (FDE_1) to 'Weight_RAM/Read_data_out_1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Compute_Processor/Mul_input_weight_0_reg[7]' (FDE) to 'Compute_Processor/Mul_input_weight_0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Compute_Processor/Mul_input_weight_0_reg[8]' (FDE) to 'Compute_Processor/Mul_input_weight_0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Compute_Processor/Mul_input_weight_0_reg[9]' (FDE) to 'Compute_Processor/Mul_input_weight_0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Compute_Processor/Mul_input_weight_0_reg[10]' (FDE) to 'Compute_Processor/Mul_input_weight_0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Compute_Processor/Mul_input_weight_0_reg[11]' (FDE) to 'Compute_Processor/Mul_input_weight_0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Compute_Processor/Mul_input_weight_0_reg[12]' (FDE) to 'Compute_Processor/Mul_input_weight_0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Compute_Processor/Mul_input_weight_0_reg[13]' (FDE) to 'Compute_Processor/Mul_input_weight_0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Compute_Processor/Mul_input_weight_0_reg[14]' (FDE) to 'Compute_Processor/Mul_input_weight_0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_5_reg[7]' (FDE_1) to 'Weight_RAM/Read_data_out_5_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_5_reg[8]' (FDE_1) to 'Weight_RAM/Read_data_out_5_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_5_reg[9]' (FDE_1) to 'Weight_RAM/Read_data_out_5_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_5_reg[10]' (FDE_1) to 'Weight_RAM/Read_data_out_5_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_5_reg[11]' (FDE_1) to 'Weight_RAM/Read_data_out_5_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_5_reg[12]' (FDE_1) to 'Weight_RAM/Read_data_out_5_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_5_reg[13]' (FDE_1) to 'Weight_RAM/Read_data_out_5_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_5_reg[14]' (FDE_1) to 'Weight_RAM/Read_data_out_5_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_4_reg[7]' (FDE_1) to 'Weight_RAM/Read_data_out_4_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_4_reg[8]' (FDE_1) to 'Weight_RAM/Read_data_out_4_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_4_reg[9]' (FDE_1) to 'Weight_RAM/Read_data_out_4_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_4_reg[10]' (FDE_1) to 'Weight_RAM/Read_data_out_4_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_4_reg[11]' (FDE_1) to 'Weight_RAM/Read_data_out_4_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_4_reg[12]' (FDE_1) to 'Weight_RAM/Read_data_out_4_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_4_reg[13]' (FDE_1) to 'Weight_RAM/Read_data_out_4_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_4_reg[14]' (FDE_1) to 'Weight_RAM/Read_data_out_4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_3_reg[6]' (FDE_1) to 'Weight_RAM/Read_data_out_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_3_reg[7]' (FDE_1) to 'Weight_RAM/Read_data_out_3_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_3_reg[8]' (FDE_1) to 'Weight_RAM/Read_data_out_3_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_3_reg[9]' (FDE_1) to 'Weight_RAM/Read_data_out_3_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_3_reg[10]' (FDE_1) to 'Weight_RAM/Read_data_out_3_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_3_reg[11]' (FDE_1) to 'Weight_RAM/Read_data_out_3_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_3_reg[12]' (FDE_1) to 'Weight_RAM/Read_data_out_3_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_3_reg[13]' (FDE_1) to 'Weight_RAM/Read_data_out_3_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Weight_RAM/Read_data_out_3_reg[14]' (FDE_1) to 'Weight_RAM/Read_data_out_3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Compute_Processor/Mul_output_add_data_0_reg[0]' (FDE) to 'Compute_Processor/Mul_output_add_data_0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Compute_Processor/Mul_output_add_data_0_reg[1]' (FDE) to 'Compute_Processor/Mul_output_add_data_0_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Compute_Processor/Mul_output_add_data_0_reg[2]' (FDE) to 'Compute_Processor/Mul_output_add_data_0_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Compute_Processor/Mul_output_add_data_0_reg[3]' (FDE) to 'Compute_Processor/Mul_output_add_data_0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Compute_Processor/Mul_output_add_data_0_reg[4]' (FDE) to 'Compute_Processor/Mul_output_add_data_0_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Compute_Processor/Mul_output_add_data_0_reg[5]' (FDE) to 'Compute_Processor/Mul_output_add_data_0_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Compute_Processor/Mul_output_add_data_0_reg[6]' (FDE) to 'Compute_Processor/Mul_output_add_data_0_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Compute_Processor/Mul_output_add_data_0_reg[7] )
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[5]__6' (FDRE) to 'RES_read_address_width_reg_rep[5]__4'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[4]__6' (FDRE) to 'RES_read_address_width_reg_rep[4]__4'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[3]__6' (FDRE) to 'RES_read_address_width_reg_rep[3]__4'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[2]__6' (FDRE) to 'RES_read_address_width_reg_rep[2]__4'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[1]__6' (FDRE) to 'RES_read_address_width_reg_rep[1]__4'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[0]__6' (FDRE) to 'RES_read_address_width_reg_rep[0]__4'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[5]__5' (FDRE) to 'RES_read_address_width_reg_rep[5]__4'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[4]__5' (FDRE) to 'RES_read_address_width_reg_rep[4]__4'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[3]__5' (FDRE) to 'RES_read_address_width_reg_rep[3]__4'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[2]__5' (FDRE) to 'RES_read_address_width_reg_rep[2]__4'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[1]__5' (FDRE) to 'RES_read_address_width_reg_rep[1]__4'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[0]__5' (FDRE) to 'RES_read_address_width_reg_rep[0]__4'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[5]__4' (FDRE) to 'RES_read_address_width_reg_rep[5]__2'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[4]__4' (FDRE) to 'RES_read_address_width_reg_rep[4]__2'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[3]__4' (FDRE) to 'RES_read_address_width_reg_rep[3]__2'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[2]__4' (FDRE) to 'RES_read_address_width_reg_rep[2]__2'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[1]__4' (FDRE) to 'RES_read_address_width_reg_rep[1]__2'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[0]__4' (FDRE) to 'RES_read_address_width_reg_rep[0]__2'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[5]__3' (FDRE) to 'RES_read_address_width_reg_rep[5]__2'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[4]__3' (FDRE) to 'RES_read_address_width_reg_rep[4]__2'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[3]__3' (FDRE) to 'RES_read_address_width_reg_rep[3]__2'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[2]__3' (FDRE) to 'RES_read_address_width_reg_rep[2]__2'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[1]__3' (FDRE) to 'RES_read_address_width_reg_rep[1]__2'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[0]__3' (FDRE) to 'RES_read_address_width_reg_rep[0]__2'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[5]__2' (FDRE) to 'RES_read_address_width_reg_rep[5]__0'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[4]__2' (FDRE) to 'RES_read_address_width_reg_rep[4]__0'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[3]__2' (FDRE) to 'RES_read_address_width_reg_rep[3]__0'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[2]__2' (FDRE) to 'RES_read_address_width_reg_rep[2]__0'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[1]__2' (FDRE) to 'RES_read_address_width_reg_rep[1]__0'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[0]__2' (FDRE) to 'RES_read_address_width_reg_rep[0]__0'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[5]__1' (FDRE) to 'RES_read_address_width_reg_rep[5]__0'
+INFO: [Synth 8-3886] merging instance 'RES_read_address_width_reg_rep[4]__1' (FDRE) to 'RES_read_address_width_reg_rep[4]__0'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1002.324 ; gain = 405.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-------------------+-----------+----------------------+-----------------------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives                  | 
++------------+-------------------+-----------+----------------------+-----------------------------+
+|myip        | Data_RAM/RAM_reg  | Implied   | 512 x 16             | RAM64X1D x 40	RAM64M x 200	 | 
+|myip        | RES_RAM/RAM_0_reg | Implied   | 512 x 16             | RAM64X1D x 8	RAM64M x 40	   | 
+|myip        | RES_RAM/RAM_1_reg | Implied   | 512 x 16             | RAM64X1D x 8	RAM64M x 40	   | 
+|myip        | RES_RAM/RAM_2_reg | Implied   | 512 x 16             | RAM64X1D x 8	RAM64M x 40	   | 
+|myip        | RES_RAM/RAM_3_reg | Implied   | 512 x 16             | RAM64X1D x 8	RAM64M x 40	   | 
+|myip        | RES_RAM/RAM_4_reg | Implied   | 512 x 16             | RAM64X1D x 8	RAM64M x 40	   | 
+|myip        | RES_RAM/RAM_5_reg | Implied   | 512 x 16             | RAM64X1D x 8	RAM64M x 40	   | 
+|myip        | RES_RAM/RAM_6_reg | Implied   | 512 x 16             | RAM64X1D x 8	RAM64M x 40	   | 
+|myip        | RES_RAM/RAM_7_reg | Implied   | 512 x 16             | RAM64X1D x 8	RAM64M x 40	   | 
++------------+-------------------+-----------+----------------------+-----------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|myip        | (A2*B2 or 0) | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|myip        | (A2*B2 or 0) | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|myip        | (A2*B2 or 0) | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|myip        | (A2*B2 or 0) | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|myip        | (A2*B2 or 0) | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1023.312 ; gain = 426.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.270 ; gain = 428.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+-------------------+-----------+----------------------+-----------------------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives                  | 
++------------+-------------------+-----------+----------------------+-----------------------------+
+|myip        | Data_RAM/RAM_reg  | Implied   | 512 x 16             | RAM64X1D x 40	RAM64M x 200	 | 
+|myip        | RES_RAM/RAM_0_reg | Implied   | 512 x 16             | RAM64X1D x 8	RAM64M x 40	   | 
+|myip        | RES_RAM/RAM_1_reg | Implied   | 512 x 16             | RAM64X1D x 8	RAM64M x 40	   | 
+|myip        | RES_RAM/RAM_2_reg | Implied   | 512 x 16             | RAM64X1D x 8	RAM64M x 40	   | 
+|myip        | RES_RAM/RAM_3_reg | Implied   | 512 x 16             | RAM64X1D x 8	RAM64M x 40	   | 
+|myip        | RES_RAM/RAM_4_reg | Implied   | 512 x 16             | RAM64X1D x 8	RAM64M x 40	   | 
+|myip        | RES_RAM/RAM_5_reg | Implied   | 512 x 16             | RAM64X1D x 8	RAM64M x 40	   | 
+|myip        | RES_RAM/RAM_6_reg | Implied   | 512 x 16             | RAM64X1D x 8	RAM64M x 40	   | 
+|myip        | RES_RAM/RAM_7_reg | Implied   | 512 x 16             | RAM64X1D x 8	RAM64M x 40	   | 
++------------+-------------------+-----------+----------------------+-----------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1055.207 ; gain = 458.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1059.871 ; gain = 462.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1059.871 ; gain = 462.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1059.871 ; gain = 462.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1059.871 ; gain = 462.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1059.871 ; gain = 462.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1059.871 ; gain = 462.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|myip        | Compute_Processor/Result_RAM_write_address_depth_reg[2] | 3      | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|myip        | Compute_Processor/Done_M_reg                            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    18|
+|3     |DSP48E1  |     5|
+|4     |LUT1     |    22|
+|5     |LUT2     |    57|
+|6     |LUT3     |   128|
+|7     |LUT4     |    85|
+|8     |LUT5     |    65|
+|9     |LUT6     |   573|
+|10    |MUXF7    |   208|
+|11    |MUXF8    |    64|
+|12    |RAM64M   |   520|
+|13    |RAM64X1D |   104|
+|14    |SRL16E   |     4|
+|15    |FDRE     |   378|
+|16    |FDSE     |    11|
+|17    |IBUF     |    20|
+|18    |OBUF     |    19|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------+------------------+------+
+|      |Instance            |Module            |Cells |
++------+--------------------+------------------+------+
+|1     |top                 |                  |  2282|
+|2     |  Data_RAM          |Data_RAM          |   568|
+|3     |  Compute_Processor |Compute_Processor |   475|
+|4     |    Adder_unit      |Adder             |   127|
+|5     |    Instr_RAM       |Simple_RAM        |    12|
+|6     |  RES_RAM           |RES_RAM           |   864|
+|7     |  Weight_RAM        |Weight_RAM        |    49|
++------+--------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1059.871 ; gain = 462.742
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 1059.871 ; gain = 364.684
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1059.871 ; gain = 462.742
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1059.871 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 919 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 624 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1059.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 624 instances were transformed.
+  RAM64M => RAM64M (inverted pins: WCLK) (RAMD64E(x4)): 520 instances
+  RAM64X1D => RAM64X1D (inverted pins: WCLK) (RAMD64E(x2)): 104 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+139 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1059.871 ; gain = 757.355
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1059.871 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.runs/synth_1/myip.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file myip_utilization_synth.rpt -pb myip_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Feb  2 11:29:59 2022...

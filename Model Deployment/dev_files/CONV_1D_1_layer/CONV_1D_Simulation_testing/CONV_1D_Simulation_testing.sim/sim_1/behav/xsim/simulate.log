@@ -1,0 +1,6 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Loading Memory.
+WARNING: Too many words specified in data file test_input.mem
+Test Failed.
+$finish called at time : 871125 ns : File "C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/sim_1/imports/Lab 1/tb_myip_v1_0.v" Line 132

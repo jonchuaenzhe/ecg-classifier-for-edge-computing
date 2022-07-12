@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Feb  2 11:19:39 2022
+# Process ID: 7272
+# Current directory: C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.sim/sim_1/behav/xsim/xsim.dir/tb_myip_v1_0_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.sim/sim_1/behav/xsim/xsim.dir/tb_myip_v1_0_behav/webtalk/xsim_webtalk.tcl -notrace

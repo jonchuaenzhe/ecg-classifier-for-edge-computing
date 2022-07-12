@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CONV_1D_Simulation_testing.srcs/sources_1/new/Adder.v" \
+"../../../../CONV_1D_Simulation_testing.srcs/sources_1/new/Compute_Processor.v" \
+"../../../../CONV_1D_Simulation_testing.srcs/sources_1/new/Data_RAM.v" \
+"../../../../CONV_1D_Simulation_testing.srcs/sources_1/new/Multiply.v" \
+"../../../../CONV_1D_Simulation_testing.srcs/sources_1/new/RES_RAM.v" \
+"../../../../CONV_1D_Simulation_testing.srcs/sources_1/new/Simple_RAM.v" \
+"../../../../CONV_1D_Simulation_testing.srcs/sources_1/new/Weight_RAM.v" \
+"../../../../CONV_1D_Simulation_testing.srcs/sources_1/new/myip.v" \
+"../../../../CONV_1D_Simulation_testing.srcs/sim_1/imports/Lab 1/tb_myip_v1_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

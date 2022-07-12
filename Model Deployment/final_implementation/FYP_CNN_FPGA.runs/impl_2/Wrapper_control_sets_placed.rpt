@@ -1,0 +1,228 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sun Mar  6 21:52:20 2022
+| Host         : DESKTOP-864GRHJ running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Wrapper_control_sets_placed.rpt
+| Design       : Wrapper
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   150 |
+|    Minimum number of control sets                        |   150 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   142 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   150 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |    12 |
+| >= 6 to < 8        |     5 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     4 |
+| >= 14 to < 16      |     0 |
+| >= 16              |   119 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             346 |          145 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              70 |           22 |
+| Yes          | No                    | No                     |             315 |          205 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             271 |          102 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+----------------------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+
+|    Clock Signal   |                          Enable Signal                         |                          Set/Reset Signal                         | Slice Load Count | Bel Load Count |
++-------------------+----------------------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+
+|  sysclk_IBUF_BUFG | UART_RX_Controller/time_out_counter                            |                                                                   |                1 |              1 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/nr_of_reads_reg[8]                          | UART_RX_Controller/Valid_num_reg_4                                |                1 |              1 |
+|  sysclk_IBUF_BUFG | UART_TX_Controller/UART_TX/o_Tx_Serial_i_1_n_0                 |                                                                   |                1 |              1 |
+| ~sysclk_IBUF_BUFG |                                                                |                                                                   |                1 |              1 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/state_reg[4][0]                     |                                                                   |                1 |              4 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/state_reg[1]_1                      |                                                                   |                2 |              4 |
+|  sysclk_IBUF_BUFG | Compute_Processor/uCode_gen/Data_Write_uCode[19]_i_1_n_0       | Compute_Processor/uCode_gen/Data_Write_uCode[23]_i_1_n_0          |                1 |              4 |
+|  sysclk_IBUF_BUFG | Compute_Processor/Height                                       | Compute_Processor/Compute_stage[6]_i_1_n_0                        |                2 |              4 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/r_Rx_DV_reg_1                       |                                                                   |                4 |              4 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/state_reg[2]                        |                                                                   |                3 |              4 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/state_reg[3]_0                      |                                                                   |                3 |              4 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/state_reg[1]                        | UART_RX_Controller/UART_RX/r_Rx_Byte_reg[3]_1                     |                2 |              4 |
+|  sysclk_IBUF_BUFG | UART_TX_Controller/UART_TX/E[0]                                |                                                                   |                2 |              4 |
+|  sysclk_IBUF_BUFG | Compute_Processor/Depth                                        | Compute_Processor/Compute_stage[6]_i_1_n_0                        |                2 |              5 |
+|  sysclk_IBUF_BUFG |                                                                | Compute_Processor/uCode_gen/Weight_Read_uCode[10]_i_1_n_0         |                2 |              5 |
+|  sysclk_IBUF_BUFG | Compute_Processor/uCode_gen/Data_Write_uCode[19]_i_1_n_0       | Compute_Processor/uCode_gen/Data_Write_uCode[14]_i_1_n_0          |                3 |              5 |
+|  sysclk_IBUF_BUFG | Compute_Processor/uCode_gen/Data_Write_uCode[19]_i_1_n_0       |                                                                   |                3 |              6 |
+|  sysclk_IBUF_BUFG | Compute_Processor/Compute_stage[6]_i_2_n_0                     | Compute_Processor/Compute_stage[6]_i_1_n_0                        |                4 |              7 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/nr_of_reads_reg[8]                          |                                                                   |                3 |              7 |
+|  sysclk_IBUF_BUFG | UART_TX_Controller/UART_TX/r_Tx_Data_0                         |                                                                   |                2 |              7 |
+|  sysclk_IBUF_BUFG | UART_TX_Controller/UART_TX/r_Tx_Active_reg_0[0]                |                                                                   |                3 |              7 |
+|  sysclk_IBUF_BUFG |                                                                | Compute_Processor/Mul_output_mul_data_ALU_0[7]_i_1_n_0            |                4 |              8 |
+|  sysclk_IBUF_BUFG |                                                                | Compute_Processor/Compute_stage[6]_i_1_n_0                        |                3 |              9 |
+|  sysclk_IBUF_BUFG | Compute_Processor/Width                                        | Compute_Processor/Compute_stage[6]_i_1_n_0                        |                4 |              9 |
+|  sysclk_IBUF_BUFG | UART_TX_Controller/E[0]                                        |                                                                   |                4 |              9 |
+|  sysclk_IBUF_BUFG | UART_TX_Controller/UART_TX/r_Clock_Count                       | UART_TX_Controller/UART_TX/r_Clock_Count0                         |                4 |             11 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/r_Clock_Count[10]_i_2__0_n_0        | UART_RX_Controller/UART_RX/r_Bit_Index                            |                6 |             11 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/state_reg[1]_1                      | UART_RX_Controller/UART_RX/state_reg[1]_0                         |                4 |             12 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/state_reg[2]                        | UART_RX_Controller/Received_1[15]_i_1_n_0                         |                4 |             12 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/state_reg[3]_0                      | UART_RX_Controller/UART_RX/state_reg[3]                           |                4 |             12 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/r_Rx_DV_reg_1                       | UART_RX_Controller/UART_RX/r_Rx_DV_reg_0                          |                4 |             12 |
+|  sysclk_IBUF_BUFG |                                                                | Compute_Processor/Multiply_unit_parallel/Data_Read_Control_reg[1] |                5 |             16 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/E[0]                                |                                                                   |               10 |             16 |
+|  sysclk_IBUF_BUFG | Compute_Processor/Comparator_2_into_1/internal_ref[15]_i_2_n_0 | Compute_Processor/Comparator_2_into_1/internal_ref[15]_i_1_n_0    |                4 |             16 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Read_Control_reg[0]_2[0]                |                                                                   |                7 |             16 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/E[0]                                         |                                                                   |                6 |             16 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Read_Control_reg[0]_1                   |                                                                   |                8 |             16 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Read_Control_reg[0]_1                   | Compute_Processor/Data_Read_Control_reg[19]_2[0]                  |                6 |             16 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Read_Control_reg[0]_1                   | Compute_Processor/Data_Read_Control_reg[18]_2[0]                  |                5 |             16 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Read_Control_reg[0]_1                   | Compute_Processor/Data_Read_Control_reg[19]_3[0]                  |                5 |             16 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Read_Control_reg[0]_1                   | Compute_Processor/SR[0]                                           |                7 |             16 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Read_Control_reg[0]_2[0]                | Compute_Processor/Data_Read_Control_reg[17]_2[0]                  |                6 |             16 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Read_Control_reg[0]_2[0]                | Compute_Processor/Data_Read_Control_reg[17]_1[0]                  |                9 |             16 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Read_Control_reg[0]_2[0]                | Compute_Processor/Data_Read_Control_reg[15]_0[0]                  |                4 |             16 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Read_Control_reg[0]_2[0]                | Compute_Processor/Data_Read_Control_reg[16]_16[0]                 |                6 |             16 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/time_out_counter                            | UART_RX_Controller/Valid_num_reg_0                                |                5 |             18 |
+|  sysclk_IBUF_BUFG |                                                                | Compute_Processor/Final_Mul_Mux_Control                           |                8 |             32 |
+|  sysclk_IBUF_BUFG | Compute_Enable_reg_n_0                                         |                                                                   |               19 |             45 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Read_Control_reg[0]_3[0]                |                                                                   |               43 |             48 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Read_Control_reg[13]_0[0]               |                                                                   |               39 |             48 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Read_Control_reg[13]_1[0]               |                                                                   |               41 |             48 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[11]_3                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[11]_4                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[11]_5                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[11]_0                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[11]_6                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[10]_8                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[11]_7                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[10]_1                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[11]_8                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[11]_9                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[10]_11                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[10]_3                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[10]_4                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[10]_5                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[11]_1                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[10]_9                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[10]_10                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_23                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[21]_1                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[6]_13                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_26                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_27                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[21]_2                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_4                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_7                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_21                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[6]_11                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_18                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_2                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_17                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_6                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_20                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[12]_5                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_0                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[22]_3                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[6]_10                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[6]_14                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_10                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[12]_3                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[6]_12                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_25                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_11                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_3                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_15                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[21]_3                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[22]_1                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[6]_15                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[6]_2                  |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[6]_7                  |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_24                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[6]_8                  |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_1                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_12                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[12]_4                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_14                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_9                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[6]_4                  |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[6]_1                  |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[12]_2                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_13                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_5                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_8                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_19                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[22]_2                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[6]_0                  |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[22]_0                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[6]_5                  |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[6]_6                  |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_16                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[6]_9                  |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[13]_22                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[6]_3                  |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/state_machine_reg[0]_5                       |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/state_machine_reg[0]_1                       |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/state_machine_reg[0]_2                       |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/state_machine_reg_0_sn_1                     |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/state_machine_reg[0]_16                      |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/state_machine_reg[0]_4                       |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[21]_0                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/state_machine_reg[0]_9                       |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/state_machine_reg[0]_7                       |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/state_machine_reg[0]_6                       |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/state_machine_reg[0]_15                      |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/state_machine_reg[0]_10                      |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/state_machine_reg[0]_13                      |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/state_machine_reg[0]_17                      |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/state_machine_reg[0]_0                       |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/state_machine_reg[0]_12                      |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[10]_6                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[11]_11                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[11]_2                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[10]_2                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[10]_12                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[10]_7                 |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Data_Write_Control_reg[11]_10                |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/state_machine_reg[0]_18                      |                                                                   |               18 |             66 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/CONV1D_3rd_Write_Enable                      |                                                                   |               15 |            120 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/FC_1st_Write_Enable                          |                                                                   |               15 |            120 |
+|  sysclk_IBUF_BUFG |                                                                |                                                                   |              144 |            347 |
++-------------------+----------------------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+
+
+

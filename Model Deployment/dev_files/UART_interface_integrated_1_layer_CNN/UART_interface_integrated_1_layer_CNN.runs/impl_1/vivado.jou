@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Feb  2 19:55:13 2022
+# Process ID: 12656
+# Current directory: C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_interface_integrated_1_layer_CNN/UART_interface_integrated_1_layer_CNN.runs/impl_1
+# Command line: vivado.exe -log myip.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source myip.tcl -notrace
+# Log file: C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_interface_integrated_1_layer_CNN/UART_interface_integrated_1_layer_CNN.runs/impl_1/myip.vdi
+# Journal file: C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_interface_integrated_1_layer_CNN/UART_interface_integrated_1_layer_CNN.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source myip.tcl -notrace

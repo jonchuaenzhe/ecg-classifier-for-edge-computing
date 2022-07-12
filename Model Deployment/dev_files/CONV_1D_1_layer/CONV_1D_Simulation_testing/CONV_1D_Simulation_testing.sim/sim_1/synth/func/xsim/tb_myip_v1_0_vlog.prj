@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_myip_v1_0_func_synth.v" \
+"../../../../../CONV_1D_Simulation_testing.srcs/sim_1/imports/Lab 1/tb_myip_v1_0.v" \
+
+# Do not sort compile order
+nosort

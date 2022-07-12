@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"Testbench_func_synth.v" \
+"../../../../../FYP_CNN_FPGA.srcs/sim_1/imports/new/testbench.v" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,115 @@
+//first input vector
+17c     10b     a6      72      1a
+01      ffdb    ffd0    ffc4    0d
+ffaa    ffe8    ffdb    ffb7    ff9d
+ffaa    ff76    ffd0    ffaa    ffdb
+ffb7    ffc4    ffdb    ff5f    ffaa
+ff9d    ff83    ff76    ffc4    ff83
+ff9d    ff83    ff76    ff6c    ff1e
+ff52    ff5f    ff45    ff6c    ff52
+ff45    ff38    ff52    ff45    ff45
+ff6c    ff6c    ff76    ff52    ffaa
+ff6c    ffdb    ff6c    ff83    ffe8
+ffd0    ffc4    fff5    1a      27
+7f      8c      fff5    ff76    ff76
+ffaa    ffaa    ff76    ff5f    ff52
+ffc4    31c     6c0     374     ff6c
+fda5    fe3b    fed3    ff38    ff9d
+ff90    ff83    ff90    ffdb    ffe8
+ffdb    27      ffe8    ffe8    41
+27      72      8c      e4      a6
+10b     17c     205     205     239
+246     277     29d     250     205
+186     f1      58      0d      1a
+0d      4b      ff90    0d      01
+ffe8    ffdb    ff9d    fff5    1a
+01      ffc4    ffaa    fff5    ffc4
+fff5    ffb7    ffe8    ff90    ffe8
+ffaa    ff83    ffc4    ff6c    ff9d
+ff9d    ff9d    ff83    ff83    ffd0
+ffc4    ff52    ff90    ff90    ff5f
+ff76    ff9d    ff83    ff5f    ffb7
+ffaa    ff6c    ff76    ffaa    ff6c
+ff6c    ff76    ffaa    ffb7    ffe8
+ffaa    0d      1a      ff83    ff52
+ff6c    ff5f    ff52    ff5f    ff38
+fefa    ff1e    1f8     4d3     205
+fe6f    fd5a    fd4d    fe3b    fefa
+ff45    ff5f    ff90    ffaa    ff76
+ff83    ff90    ff90    ffb7    ffe8
+0d      fff5    0d      34      8c
+7f      ca      115     186     186
+21f     21f     21f     21f     1c7
+149     e4      b0      41      fff5
+ffe8    ff9d    ffb7    ff90    ff6c
+ffd0    ffb7    ff90    ff9d    ffaa
+ffd0    ffd0    ffc4    ffc4    ffd0
+ff9d    ff83    ffc4    ffdb    ffdb
+ff90    ffdb    fff5    ffaa    ffaa
+ffd0    ffd0    ffc4    ff9d    ffb7
+ffb7    ffb7    fff5    ffd0    ffc4
+fff5    ff9d    ffdb    ff90    fff5
+01      ffd0    ffaa    fff5    ffd0
+ff9d    ffaa    fff5    ffd0    ffaa
+ffc4    ffdb    ffe8    ffe8    ffc4
+27      01      4b      34      ffb7
+ffaa    ff83    ff9d    ff6c    ff76
+ff83    ff1e    ff76    21f     4fa
+3a5     0d      fe31    fe31    fee0
+ff5f    ff76    ff38    ffaa    ff90
+ff5f    ff90    fff5    ffaa    ffb7
+ffdb    0d      ffdb    1a      0d
+72      58      d7      115     16f
+16f     16f     1f8     1c7     1eb
+1ba     186     122     99      34
+ffe8    ffe8    ffdb    ffdb    ffd0
+ffaa    ffaa    ff90    ffb7    ff90
+ff90    ff83    ffdb    ffb7    ff90
+ffe8    ff9d    fff5    ff9d    ff9d
+ffc4    ff76    ff90    ffaa    ff76
+ff76    ffdb    ffaa    ff9d    ff9d
+ff90    ff76    ff90    ff83    ff90
+ffb7    ffb7    ff9d    ffb7    ffd0
+ffe8    ffc4    ff90    ffd0    ff9d
+ffaa    ff90    ffd0    ffdb    ff9d
+ffe8    ffaa    01      fff5    ffd0
+0d      1a      72      7f      58
+34      ffaa    ffaa    ffb7    ffe8
+ffd0    0d      ff90    ffb7    239
+55e     4bc     f1      fea0    feba
+ff11    ff9d    ff9d    ff5f    ffe8
+ffb7    1a      fff5    ffd0    0d
+ffdb    34      34      0d      65
+65      b0      bd      fe      13c
+193     1e1     1eb     205     22c
+22c     21f     1c7     149     fe
+ca      27      0d      ffd0    fff5
+01      ffdb    ffdb    ffd0    ff90
+ffc4    ffd0    ffb7    ffc4    ff83
+ffb7    ffb7    ffb7    ff9d    ff9d
+ffc4    ff83    ffc4    ff90    ffc4
+ffc4    ff6c    ffaa    ff76    ff90
+ffb7    ffaa    ffaa    ff5f    ff83
+ffaa    ffaa    ffb7    ffaa    ffb7
+ff83    ff83    ff5f    ff76    ffdb
+ff6c    ff76    ff83    ff9d    ff83
+ff9d    ff90    ffaa    ffaa    ffc4
+ffd0    01      27      1a      ff76
+ff45    ff90    ff83    ff9d    ff52
+ff5f    ff52    115     43d     514
+0d      fdd6    fd8b    fe17    ff38
+ff6c    ff83    ffd0    ffaa    ffc4
+ffe8    ffd0    ffdb    fff5    1a
+01      27      7f      58      99
+b0      f1
+
+
+//second input vector
+0a      ffa9    10      ffd8    68      ffb2
+31      ffd4    ffcc    ffc1    ffcb    ffcb
+33      1c      16      fff4    ffd3    ffb5
+35      aa      76      0b      ffa5    ffa9
+3e      fff0    fffa    11      36      4e
+ffff    ffb3    ffd9    03      0f      39
+23      31      03      fff1    2d      ffd3
+ffb3    ffc7    ffc8    ffd3    24      74

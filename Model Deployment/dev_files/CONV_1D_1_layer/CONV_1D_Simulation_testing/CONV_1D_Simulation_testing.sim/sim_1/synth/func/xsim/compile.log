@@ -1,0 +1,11 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.sim/sim_1/synth/func/xsim/tb_myip_v1_0_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module Compute_Processor
+INFO: [VRFC 10-311] analyzing module Data_RAM
+INFO: [VRFC 10-311] analyzing module RES_RAM
+INFO: [VRFC 10-311] analyzing module Simple_RAM
+INFO: [VRFC 10-311] analyzing module Weight_RAM
+INFO: [VRFC 10-311] analyzing module myip
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/CONV_1D_1_layer/CONV_1D_Simulation_testing/CONV_1D_Simulation_testing.srcs/sim_1/imports/Lab 1/tb_myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_myip_v1_0

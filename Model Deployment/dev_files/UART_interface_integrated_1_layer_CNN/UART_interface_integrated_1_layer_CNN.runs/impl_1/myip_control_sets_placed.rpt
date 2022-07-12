@@ -1,0 +1,191 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Feb  2 19:55:50 2022
+| Host         : DESKTOP-864GRHJ running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file myip_control_sets_placed.rpt
+| Design       : myip
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   113 |
+|    Minimum number of control sets                        |   113 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   121 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   113 |
+| >= 0 to < 4        |     5 |
+| >= 4 to < 6        |     7 |
+| >= 6 to < 8        |     4 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     4 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    86 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              54 |           32 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              38 |           15 |
+| Yes          | No                    | No                     |             224 |           99 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             275 |          118 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+|    Clock Signal   |                        Enable Signal                       |                       Set/Reset Signal                      | Slice Load Count | Bel Load Count |
++-------------------+------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+|  sysclk_IBUF_BUFG | UART_TX_Controller/UART_TX/o_Tx_Serial_i_1_n_0             |                                                             |                1 |              1 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Weight_read_en                           | Compute_Processor/Weights_RAM_address_depth_reg[2]_1        |                1 |              1 |
+| ~sysclk_IBUF_BUFG |                                                            |                                                             |                2 |              2 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/Valid_num_reg_0                         | UART_RX_Controller/state_machine_reg[2]                     |                1 |              2 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Weight_read_en                           | Compute_Processor/Weights_RAM_address_depth_reg[0]_0        |                2 |              2 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/state_reg[4][0]                 |                                                             |                1 |              4 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/r_Rx_DV_reg_1                   |                                                             |                2 |              4 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/state_reg[1]                    | UART_RX_Controller/UART_RX/r_Rx_Byte_reg[3]_0               |                1 |              4 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/state_reg[3]_0                  |                                                             |                2 |              4 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/state_reg[2]                    |                                                             |                2 |              4 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/state_reg[1]_2                  |                                                             |                3 |              4 |
+|  sysclk_IBUF_BUFG |                                                            | Compute_Processor/Instr_ptr[12]_i_1_n_0                     |                2 |              5 |
+|  sysclk_IBUF_BUFG | UART_TX_Controller/UART_TX/r_Tx_Data_0                     |                                                             |                2 |              6 |
+|  sysclk_IBUF_BUFG | Compute_enable_reg_n_0                                     | Compute_Processor/Result_RAM_write_address_width[5]_i_1_n_0 |                4 |              6 |
+|  sysclk_IBUF_BUFG | UART_TX_Controller/UART_TX/E[0]                            |                                                             |                3 |              6 |
+|  sysclk_IBUF_BUFG | UART_TX_Controller/state_machine_reg[2]                    |                                                             |                5 |              7 |
+|  sysclk_IBUF_BUFG |                                                            | Compute_Processor/Instr_ptr[11]_i_1_n_0                     |                4 |              8 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/Valid_num_reg_0                         |                                                             |                3 |              8 |
+|  sysclk_IBUF_BUFG | Compute_enable_reg_n_0                                     | Compute_Processor/Mul_output_add_data_0[23]_i_1_n_0         |                3 |              8 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/r_Clock_Count[10]_i_2_n_0       | UART_RX_Controller/UART_RX/r_Bit_Index                      |                4 |             11 |
+|  sysclk_IBUF_BUFG | UART_TX_Controller/UART_TX/r_Clock_Count_1                 | UART_TX_Controller/UART_TX/r_Clock_Count0                   |                3 |             11 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/state_reg[3]_0                  | UART_RX_Controller/UART_RX/state_reg[3]                     |                4 |             12 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/r_Rx_DV_reg_1                   | UART_RX_Controller/UART_RX/r_Rx_DV_reg_0                    |                4 |             12 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/state_reg[2]                    | UART_RX_Controller/UART_RX/state_reg[1]_1                   |                4 |             12 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/state_reg[1]_2                  | UART_RX_Controller/UART_RX/state_reg[1]_0                   |                4 |             12 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/time_out_counter                        | UART_RX_Controller/state_machine_reg[0]_1                   |                5 |             14 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/Data_write_address_depth                | UART_RX_Controller/state_machine_reg[0]_2                   |                3 |             15 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Weight_read_en                           | Compute_Processor/Data_RAM_address_reg[8]_2[0]              |               11 |             16 |
+|  sysclk_IBUF_BUFG | UART_TX_Controller/BCD_in[15]_i_1_n_0                      |                                                             |                4 |             16 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Weight_read_en                           | Compute_Processor/Data_RAM_address_reg[8]_1[0]              |               11 |             16 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Weight_read_en                           | Compute_Processor/Weights_RAM_Read_Enable_Reg_reg_0[0]      |               11 |             16 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/UART_RX/E[0]                            |                                                             |                7 |             16 |
+|  sysclk_IBUF_BUFG | Compute_enable_reg_n_0                                     | Compute_Processor/Result_RAM_write_data[15]_i_1_n_0         |                4 |             16 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Weight_read_en                           | Compute_Processor/SR[0]                                     |               10 |             16 |
+| ~sysclk_IBUF_BUFG | RES_read_en                                                |                                                             |                9 |             16 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_22                |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_12                |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_14                |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_16                |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_0                 |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_18                |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_19                |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_13                |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_2                 |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_20                |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_1                 |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_15                |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_10                |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_21                |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_depth_reg[1]_0  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_3                 |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_4                 |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_5                 |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_7                 |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_24                |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_depth_reg[1]_2  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[6]_6  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_27                |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_depth_reg[1]_1  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_25                |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_depth_reg[1]_3  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_8                 |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_23                |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_26                |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_6                 |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_9                 |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_17                |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[8]_5  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[8]_10 |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[6]_0  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[8]_6  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[8]_4  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[6]_1  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[8]_14 |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[7]_6  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[6]_4  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[8]_12 |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[8]_2  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[8]_11 |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_M_reg_11                |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[7]_7  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[8]_1  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[6]_5  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[6]_2  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[8]_13 |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[8]_3  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[8]_7  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[8]_8  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[6]_7  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[7]_1  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[7]_3  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[6]_3  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[7]_2  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[8]_15 |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[7]_5  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[8]_0  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[8]_9  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[7]_0  |                                                             |                6 |             22 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Result_RAM_write_address_width_reg[7]_4  |                                                             |                6 |             22 |
+|  sysclk_IBUF_BUFG |                                                            | Compute_Processor/clear                                     |                9 |             25 |
+|  sysclk_IBUF_BUFG | UART_RX_Controller/E[0]                                    |                                                             |                8 |             25 |
+|  sysclk_IBUF_BUFG | Compute_enable_reg_n_0                                     |                                                             |               25 |             51 |
+|  sysclk_IBUF_BUFG |                                                            |                                                             |               30 |             52 |
+| ~sysclk_IBUF_BUFG | Compute_Processor/Weight_read_en                           |                                                             |               22 |             56 |
+|  sysclk_IBUF_BUFG | UART_TX_Controller/state_machine_reg[2]                    | UART_TX_Controller/state_machine_reg[2]_3                   |               28 |             73 |
+| ~sysclk_IBUF_BUFG | Data_RAM/RAM_reg_r1_0_63_0_2_i_2_n_0                       |                                                             |               28 |            110 |
+| ~sysclk_IBUF_BUFG | Data_RAM/RAM_reg_r1_128_191_0_2_i_1_n_0                    |                                                             |               28 |            110 |
+| ~sysclk_IBUF_BUFG | Data_RAM/RAM_reg_r1_192_255_0_2_i_1_n_0                    |                                                             |               28 |            110 |
+| ~sysclk_IBUF_BUFG | Data_RAM/RAM_reg_r1_320_383_0_2_i_1_n_0                    |                                                             |               28 |            110 |
+| ~sysclk_IBUF_BUFG | Data_RAM/RAM_reg_r1_384_447_0_2_i_1_n_0                    |                                                             |               28 |            110 |
+| ~sysclk_IBUF_BUFG | Data_RAM/RAM_reg_r1_256_319_0_2_i_1_n_0                    |                                                             |               28 |            110 |
+| ~sysclk_IBUF_BUFG | Data_RAM/RAM_reg_r1_448_511_0_2_i_1_n_0                    |                                                             |               28 |            110 |
+| ~sysclk_IBUF_BUFG | Data_RAM/RAM_reg_r1_64_127_0_2_i_1_n_0                     |                                                             |               28 |            110 |
++-------------------+------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+
+

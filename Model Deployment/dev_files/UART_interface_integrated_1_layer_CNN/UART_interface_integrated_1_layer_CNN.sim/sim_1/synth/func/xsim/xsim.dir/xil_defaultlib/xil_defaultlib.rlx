@@ -1,0 +1,6 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_interface_integrated_1_layer_CNN/UART_interface_integrated_1_layer_CNN.sim/sim_1/synth/func/xsim/Testbench_func_synth.v,1643794084,verilog,,C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_interface_integrated_1_layer_CNN/UART_interface_integrated_1_layer_CNN.srcs/sim_1/new/testbench.v,,Adder;Compute_Processor;Data_RAM;RES_RAM;Simple_RAM;UART_RX;UART_RX_Flow_ctrl;UART_TX;UART_TX_Flow_ctrl;Weight_RAM;glbl;myip,,,,,,,,
+C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_interface_integrated_1_layer_CNN/UART_interface_integrated_1_layer_CNN.srcs/sim_1/new/testbench.v,1643790761,verilog,,,,Testbench,,,,,,,,

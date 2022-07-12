@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"Testbench_func_synth.v" \
+"../../../../../UART_interface_integrated_1_layer_CNN.srcs/sim_1/new/testbench.v" \
+
+# Do not sort compile order
+nosort

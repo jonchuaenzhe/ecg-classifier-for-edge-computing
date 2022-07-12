@@ -1,0 +1,517 @@
+
+*** Running vivado
+    with args -log UART_Wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source UART_Wrapper.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source UART_Wrapper.tcl -notrace
+Command: synth_design -top UART_Wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7852 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 831.648 ; gain = 234.746
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'UART_Wrapper' [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_Wrapper.v:23]
+	Parameter RX_Mode bound to: 0 - type: integer 
+	Parameter TX_Mode bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'UART_TX_Flow_ctrl' [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_TX_Flow_ctrl.v:23]
+	Parameter Bit_width_counter bound to: 4 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter Sign bound to: 3'b001 
+	Parameter Byte_0 bound to: 3'b010 
+	Parameter Byte_1 bound to: 3'b011 
+	Parameter Byte_2 bound to: 3'b100 
+	Parameter Byte_3 bound to: 3'b101 
+	Parameter Byte_4 bound to: 3'b110 
+	Parameter Return bound to: 3'b111 
+INFO: [Synth 8-6157] synthesizing module 'UART_TX' [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_TX.v:23]
+	Parameter s_IDLE bound to: 3'b000 
+	Parameter s_TX_START_BIT bound to: 3'b001 
+	Parameter s_TX_DATA_BITS bound to: 3'b010 
+	Parameter s_TX_STOP_BIT bound to: 3'b011 
+	Parameter s_CLEANUP bound to: 3'b100 
+	Parameter CLKS_PER_BIT bound to: 1250 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'UART_TX' (1#1) [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bin2bcd' [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/bin2bcd.v:113]
+	Parameter W bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bin2bcd' (2#1) [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/bin2bcd.v:113]
+INFO: [Synth 8-6155] done synthesizing module 'UART_TX_Flow_ctrl' (3#1) [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_TX_Flow_ctrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'UART_RX_Flow_ctrl' [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_RX_Flow_ctrl.v:23]
+	Parameter Bit_width_counter bound to: 4 - type: integer 
+	Parameter special_state bound to: 5'b00000 
+	Parameter Byte_0 bound to: 5'b00001 
+	Parameter Byte_1 bound to: 5'b00010 
+	Parameter Byte_2 bound to: 5'b00100 
+	Parameter Byte_3 bound to: 5'b01000 
+	Parameter Byte_4 bound to: 5'b10000 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_RX_Flow_ctrl.v:64]
+INFO: [Synth 8-6157] synthesizing module 'UART_RX' [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_RX.v:23]
+	Parameter s_IDLE bound to: 3'b000 
+	Parameter s_RX_START_BIT bound to: 3'b001 
+	Parameter s_RX_DATA_BITS bound to: 3'b010 
+	Parameter s_RX_STOP_BIT bound to: 3'b011 
+	Parameter s_CLEANUP bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'UART_RX' (4#1) [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_RX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'UART_RX_Flow_ctrl' (5#1) [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_RX_Flow_ctrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'UART_Wrapper' (6#1) [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_Wrapper.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 905.031 ; gain = 308.129
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 905.031 ; gain = 308.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 905.031 ; gain = 308.129
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 905.031 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/constrs_1/imports/digilent-xdc-master/Cmod-A7-Master.xdc]
+Finished Parsing XDC File [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/constrs_1/imports/digilent-xdc-master/Cmod-A7-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/constrs_1/imports/digilent-xdc-master/Cmod-A7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/UART_Wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/UART_Wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1000.613 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1000.613 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1000.613 ; gain = 403.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1000.613 ; gain = 403.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1000.613 ; gain = 403.711
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'UART_TX'
+INFO: [Synth 8-802] inferred FSM for state register 'TX_state_reg' in module 'UART_TX_Flow_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_IDLE |                              000 |                              000
+          s_TX_START_BIT |                              001 |                              001
+          s_TX_DATA_BITS |                              010 |                              010
+           s_TX_STOP_BIT |                              011 |                              011
+               s_CLEANUP |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'sequential' in module 'UART_TX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                    Sign |                              001 |                              001
+                  Byte_0 |                              010 |                              010
+                  Byte_1 |                              011 |                              011
+                  Byte_2 |                              100 |                              100
+                  Byte_3 |                              101 |                              101
+                  Byte_4 |                              110 |                              110
+                  Return |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'TX_state_reg' using encoding 'sequential' in module 'UART_TX_Flow_ctrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1000.613 ; gain = 403.711
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 6     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 35    
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 11    
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 12    
++---RAMs : 
+	              272 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   7 Input     16 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 3     
+	   5 Input     11 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   7 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 36    
+	   2 Input      3 Bit        Muxes := 11    
+	   5 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 30    
+	   8 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 14    
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module UART_Wrapper 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	              272 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 11    
+Module UART_TX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 1     
+Module bin2bcd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 35    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 35    
+Module UART_TX_Flow_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 16    
+	   8 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 4     
+Module UART_RX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+Module UART_RX_Flow_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 5     
++---Registers : 
+	               16 Bit    Registers := 9     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   7 Input     16 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   7 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'UART_RX_Controller/Received_0_reg[15:0]' into 'UART_RX_Controller/Received_0_reg[15:0]' [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_RX_Flow_ctrl.v:73]
+INFO: [Synth 8-4471] merging register 'UART_RX_Controller/Received_1_reg[15:0]' into 'UART_RX_Controller/Received_1_reg[15:0]' [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_RX_Flow_ctrl.v:92]
+INFO: [Synth 8-4471] merging register 'UART_RX_Controller/Received_2_reg[15:0]' into 'UART_RX_Controller/Received_2_reg[15:0]' [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_RX_Flow_ctrl.v:109]
+INFO: [Synth 8-4471] merging register 'UART_RX_Controller/Received_3_reg[15:0]' into 'UART_RX_Controller/Received_3_reg[15:0]' [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_RX_Flow_ctrl.v:128]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\UART_TX_Controller/TX_data_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\UART_TX_Controller/UART_TX/r_Tx_Data_reg[7] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1000.613 ; gain = 403.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++-------------+------------+-----------+----------------------+-------------+
+|Module Name  | RTL Object | Inference | Size (Depth x Width) | Primitives  | 
++-------------+------------+-----------+----------------------+-------------+
+|UART_Wrapper | RAM_reg    | Implied   | 32 x 16              | RAM32M x 3	 | 
++-------------+------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1000.613 ; gain = 403.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1000.613 ; gain = 403.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++-------------+------------+-----------+----------------------+-------------+
+|Module Name  | RTL Object | Inference | Size (Depth x Width) | Primitives  | 
++-------------+------------+-----------+----------------------+-------------+
+|UART_Wrapper | RAM_reg    | Implied   | 32 x 16              | RAM32M x 3	 | 
++-------------+------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'RAM_sent_address_reg_rep[0]' (FDRE) to 'RAM_sent_address_reg[0]'
+INFO: [Synth 8-3886] merging instance 'RAM_sent_address_reg_rep[1]' (FDRE) to 'RAM_sent_address_reg[1]'
+INFO: [Synth 8-3886] merging instance 'RAM_sent_address_reg_rep[2]' (FDRE) to 'RAM_sent_address_reg[2]'
+INFO: [Synth 8-3886] merging instance 'RAM_sent_address_reg_rep[3]' (FDRE) to 'RAM_sent_address_reg[3]'
+INFO: [Synth 8-3886] merging instance 'RAM_sent_address_reg_rep[4]' (FDRE) to 'RAM_sent_address_reg[4]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1026.398 ; gain = 429.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1032.172 ; gain = 435.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1032.172 ; gain = 435.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1032.172 ; gain = 435.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1032.172 ; gain = 435.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1032.172 ; gain = 435.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1032.172 ; gain = 435.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    40|
+|3     |LUT1   |    20|
+|4     |LUT2   |   136|
+|5     |LUT3   |    53|
+|6     |LUT4   |    36|
+|7     |LUT5   |    94|
+|8     |LUT6   |   137|
+|9     |MUXF7  |     2|
+|10    |MUXF8  |     1|
+|11    |RAM32M |     3|
+|12    |FDRE   |   202|
+|13    |IBUF   |     2|
+|14    |OBUF   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------+------------------+------+
+|      |Instance             |Module            |Cells |
++------+---------------------+------------------+------+
+|1     |top                  |                  |   728|
+|2     |  UART_RX_Controller |UART_RX_Flow_ctrl |   422|
+|3     |    UART_RX          |UART_RX           |   118|
+|4     |  UART_TX_Controller |UART_TX_Flow_ctrl |   256|
+|5     |    UART_TX          |UART_TX           |    81|
++------+---------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1032.172 ; gain = 435.270
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1032.172 ; gain = 339.688
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1032.172 ; gain = 435.270
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1032.172 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1032.172 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1032.172 ; gain = 728.562
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1032.172 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.runs/synth_1/UART_Wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file UART_Wrapper_utilization_synth.rpt -pb UART_Wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 31 09:45:00 2022...

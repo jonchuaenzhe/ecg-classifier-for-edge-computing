@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../UART_Testing.srcs/sources_1/new/UART_RX.v" \
+"../../../../UART_Testing.srcs/sources_1/new/UART_RX_Flow_ctrl.v" \
+"../../../../UART_Testing.srcs/sources_1/new/UART_TX.v" \
+"../../../../UART_Testing.srcs/sources_1/new/UART_TX_Flow_ctrl.v" \
+"../../../../UART_Testing.srcs/sources_1/new/UART_Wrapper.v" \
+"../../../../UART_Testing.srcs/sources_1/new/bin2bcd.v" \
+"../../../../UART_Testing.srcs/sim_1/new/UART_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_RX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_RX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_RX_Flow_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_RX_Flow_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_TX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_TX_Flow_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_TX_Flow_ctrl
+INFO: [VRFC 10-2458] undeclared symbol TX_Done, assumed default net type wire [C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_TX_Flow_ctrl.v:199]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/UART_Wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sources_1/new/bin2bcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bin2bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_Testing/UART_Testing.srcs/sim_1/new/UART_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_TB

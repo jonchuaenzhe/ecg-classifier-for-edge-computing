@@ -1,0 +1,28 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/Final Complete NN Implementation/FYP_CNN_FPGA/FYP_CNN_FPGA.sim/sim_1/synth/func/xsim/Testbench_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CONV1D_1st_Data_RAM
+INFO: [VRFC 10-311] analyzing module CONV1D_1st_RAM
+INFO: [VRFC 10-311] analyzing module CONV1D_2nd_Data_RAM
+INFO: [VRFC 10-311] analyzing module CONV1D_2nd_Data_RAM_0
+INFO: [VRFC 10-311] analyzing module CONV1D_2nd_Data_RAM_1
+INFO: [VRFC 10-311] analyzing module CONV1D_2nd_RAM
+INFO: [VRFC 10-311] analyzing module CONV1D_3rd_Data_RAM
+INFO: [VRFC 10-311] analyzing module CONV1D_3rd_RAM
+INFO: [VRFC 10-311] analyzing module Comparator_2_into_1
+INFO: [VRFC 10-311] analyzing module Compute_Processor
+INFO: [VRFC 10-311] analyzing module Data_RAM
+INFO: [VRFC 10-311] analyzing module FC_1st_Data_RAM
+INFO: [VRFC 10-311] analyzing module FC_1st_RAM
+INFO: [VRFC 10-311] analyzing module FC_2nd_Data_RAM
+INFO: [VRFC 10-311] analyzing module FC_2nd_RAM
+INFO: [VRFC 10-311] analyzing module MaxPool_Data_RAM
+INFO: [VRFC 10-311] analyzing module Multiply
+INFO: [VRFC 10-311] analyzing module UART_RX
+INFO: [VRFC 10-311] analyzing module UART_RX_Flow_ctrl
+INFO: [VRFC 10-311] analyzing module UART_TX
+INFO: [VRFC 10-311] analyzing module UART_TX_Flow_ctrl
+INFO: [VRFC 10-311] analyzing module Weights_RAM
+INFO: [VRFC 10-311] analyzing module Wrapper
+INFO: [VRFC 10-311] analyzing module uCode
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/Final Complete NN Implementation/FYP_CNN_FPGA/FYP_CNN_FPGA.srcs/sim_1/imports/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Testbench

@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_interface_integrated_1_layer_CNN/UART_interface_integrated_1_layer_CNN.sim/sim_1/synth/func/xsim/Testbench_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module Compute_Processor
+INFO: [VRFC 10-311] analyzing module Data_RAM
+INFO: [VRFC 10-311] analyzing module RES_RAM
+INFO: [VRFC 10-311] analyzing module Simple_RAM
+INFO: [VRFC 10-311] analyzing module UART_RX
+INFO: [VRFC 10-311] analyzing module UART_RX_Flow_ctrl
+INFO: [VRFC 10-311] analyzing module UART_TX
+INFO: [VRFC 10-311] analyzing module UART_TX_Flow_ctrl
+INFO: [VRFC 10-311] analyzing module Weight_RAM
+INFO: [VRFC 10-311] analyzing module myip
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lingke/Desktop/FYP/FYP_AI_on_FPGA/UART_interface_integrated_1_layer_CNN/UART_interface_integrated_1_layer_CNN.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Testbench

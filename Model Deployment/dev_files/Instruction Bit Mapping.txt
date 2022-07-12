@@ -1,0 +1,31 @@
+1. Data_RAM_Read_Enable_Reg
+2. Add_Enable_Reg
+3. Done_Reg
+4. MUL_Enable_Reg (2 bits)
+5. Weights_RAM_Read_Enable_Reg
+6. Weights_RAM_Address_Depth (3 bits) (8 numbers)
+
+Total number of bits needed:9
+
+Bit 0 : Data_RAM_Read_Enable_Reg
+Bit 1 : Weights_RAM_Read_Enable_Reg
+Bit 2 : Weights_RAM_Address_Depth [0]
+Bit 3 : Weights_RAM_Address_Depth [1]
+Bit 4 : Weights_RAM_Address_Depth [2]
+Bit 5 : MUL_Enable_Reg [0]
+Bit 6 : MUL_Enable_Reg [1]
+Bit 7 : Add_Enable_Reg
+Bit 8 : Done_Reg
+
+Instruction: 
+
+Conv 1D Filter 0      : 9'b011100011
+Conv 1D Filter 1      : 9'b011100111
+Conv 1D Filter 2      : 9'b011101011
+Conv 1D Filter 3      : 9'b011101111
+Conv 1D Filter 4      : 9'b011110011
+Conv 1D Filter 5      : 9'b011110111
+Conv 1D Filter 6      : 9'b011111011
+Conv 1D Filter 7      : 9'b011111111
+Conv 1D Filter 7 (end): 9'b111111111
+
