@@ -1,7 +1,7 @@
 Jul 2021 - May 2022
 # Lightweight ECG Classifier for Edge Computing
 
-This project aims to develop a lightweight ECG Classifier and deploy it on an FPGA chip (CMOD A7) that is small enough to be embedded on a wearable sensor, so that ECG diagnosis can be performed on the device itself without requiring cloud connection. This greatly extends the device battery life. The device will then alert patients of a cardiac emergency.
+This project aims to develop a lightweight ECG Classifier and deploy it on an FPGA chip (CMOD A7) that is small enough to be embedded on a wearable sensor, so that ECG diagnosis can be performed on the device itself without requiring cloud connection. The device can then alert patients of a cardiac emergency.
 
 The model was trained to predict Atrial Flutter (AFl) from a single ECG tracing, and the results are as follows:
 ```
@@ -12,7 +12,7 @@ Refer to this README for an implementation summary, or view the folders for in-d
 
 ## Model Building - Data & Preprocessing
 
-A total of 121,149 12-Lead ECG tracings from different countries were obtained from open-source databases:
+A total of 121,149 12-Lead ECG tracings from different countries were obtained from open-source databases. The data can be downloaded from https://physionetchallenges.org/2021/.
 ```
 1. CPSC Database: 13,256
 2. INCART Database: 74
@@ -21,8 +21,6 @@ A total of 121,149 12-Lead ECG tracings from different countries were obtained f
 5. Chapman-Shaoxing and Ningbo Database: 45,152
 6. UMich Database: 19,642
 ```
-The data can be downloaded from https://physionetchallenges.org/2021/.
-
 The preprocessing steps included reading the ECG metadata from the associated .mat files, before filtering out tracings which had unsuitable lenghts or data formats. A DataFrame of the final dataset was constructed that included the filepath and the labels for the 4 conditions mentioned, and then saved into "full_dataset.csv".
 
 ## Model Building - Training and Analysis
