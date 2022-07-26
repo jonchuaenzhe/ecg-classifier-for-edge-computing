@@ -12,7 +12,7 @@ Refer to this README for an implementation summary, or view the folders for in-d
 
 ## Model Building - Data & Preprocessing
 
-A total of 121,149 12-Lead ECG tracings from different countries were obtained from the following open-source databases:
+A total of 121,149 12-Lead ECG tracings from different countries were obtained from open-source databases:
 ```
 1. CPSC Database: 13,256
 2. INCART Database: 74
